@@ -19,8 +19,10 @@ public class RetrieveExample {
  
 
     /**
-     * args[0] Should be the name of the collection to access
-     * args[1] Should be the name of the resource to read from the collection
+     * args[0] Should be the name of the collection to access   en este caso:
+     * departamentos  --> siempre y cuando este en la base de datos departamentos dentro de apps
+     * args[1] Should be the name of the resource to read from the collection  en este caso:
+     * departamentos.xml
      */
     public static void main(String args[]) throws Exception {
 

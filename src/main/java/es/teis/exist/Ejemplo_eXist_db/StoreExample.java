@@ -17,8 +17,8 @@ import es.teis.exist.util.MyDataSource;
 public class StoreExample {
 
 	/**
-	 * args[0] Should be the name of the collection to access: books or books/gal
-	 * args[1] Should be the name of the file to read and store in the collection
+	 * args[0] Should be the name of the collection to access: Ejemplo: food/menus
+	 * args[1] Should be the name of the file to read and store in the collection: Ejemplo: src/main/resources/breakfast.xml
 	 */
 	public static void main(String args[]) throws Exception {
 
@@ -43,7 +43,7 @@ public class StoreExample {
 			// create new XMLResource; an id will be assigned to the new resource
 			// Si se le pasa null como primer argumento, indica que se le asignará un
 			// identificador cuando se cree el documento
-			res = (XMLResource) col.createResource(null, "XMLResource");
+			res = (XMLResource) col.createResource("breakfast.xml", "XMLResource");
 			File f = new File(args[1]);
 
 			if (!f.canRead()) {

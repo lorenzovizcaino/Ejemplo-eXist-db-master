@@ -20,8 +20,9 @@ public class XQueryExample {
 
 
     /**
-     * args[0] Should be the name of the collection to access
-     * args[1] Should be the XQuery to execute
+     * args[0] Should be the name of the collection to access  Ejemplo: departamentos
+     * args[1] Should be the XQuery to execute                 Ejemplo1: //LOC
+     *                                                         Ejemplo2: "for $x in doc ('departamentos.xml')//DEP_ROW return $x/DNOMBRE"
      */
     public static void main(String args[]) throws Exception {
         
